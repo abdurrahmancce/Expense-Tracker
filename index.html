@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker & Bonus Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <button id="toggleDarkMode">🌙 Dark Mode</button>
+    <h1>💰 Expense Tracker 💰</h1>
+
+    <!-- Add Expense Form -->
+    <div class="form">
+      <input type="text" id="item" placeholder="Item Name">
+      <input type="number" id="amount" placeholder="Amount">
+      <input type="date" id="date">
+      <button onclick="addExpense()">Save Expense</button>
+    </div>
+
+    <!-- Daily Expenses Table -->
+    <h2>All Expenses</h2>
+    <div class="table-wrapper">
+      <table id="expenseTable">
+        <thead>
+          <tr><th>Item</th><th>Amount</th><th>Date</th><th>Action</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Monthly & Yearly Tables -->
+    <h2>Monthly & Yearly Summary</h2>
+    <div id="monthlyTables"></div>
+    <div id="yearlyTables"></div>
+
+    <!-- Charts -->
+    <h2>Expenses Charts</h2>
+    <div class="chart-wrapper">
+      <canvas id="monthlyChart" class="chart"></canvas>
+      <canvas id="yearlyChart" class="chart"></canvas>
+    </div>
+
+    <!-- Bonus/Income Section -->
+    <h2>Bonus/Income Tracker</h2>
+    <form id="eidForm" class="form">
+      <input type="number" id="eidYear" placeholder="Year">
+      <select id="eidMonth">
+        <option value="">Select Month</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+      </select>
+      <input type="number" id="eidDate" placeholder="Date">
+      <input type="text" id="eidGiver" placeholder="Giver Name">
+      <input type="number" id="eidAmount" placeholder="Amount">
+      <button type="submit">Save Bonus</button>
+    </form>
+    <div id="eidTables"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
