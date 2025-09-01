@@ -1,4 +1,5 @@
 # Expense-Tracker
+
 💸 Expense Tracker with Bonus/Income Section 
 
 A responsive, user-friendly expense tracking web app that helps you manage your spending across categories like Food, Transport, Shopping, and Bills. The app includes dynamic charts, localStorage support, and an intuitive UI for a year-wise and category-wise breakdown of your finances.
@@ -36,10 +37,20 @@ A responsive, user-friendly expense tracking web app that helps you manage your 
 
  * Chart.js - For creating the dynamic and interactive charts.
 
+📄 LocalStorage Characteristics :
+
+ * LocalStorage is device-specific → Data saved on mobile will not appear on laptop.
+
+ * Browser-specific → Each browser has its own storage; data doesn’t cross between them.
+
+ * No automatic sync → It cannot update data across devices at the same time.
+
+ * Works offline only → Data is stored locally, not on the internet
+
 📣 Contributing :
 
 Pull requests are welcome! If you have ideas for new features, bug fixes, or improvements (e.g., CSV export, a dark mode theme, new chart types), please feel free to fork this repository and submit a pull request.
 
-📬 Contact :
+✍️ Author : 
 
-Made with ❤️ by Abdur Rahman.
+Abdur Rahman - abdurrahmancce
