@@ -52,5 +52,4 @@ A responsive, user-friendly expense tracking web app that helps you manage your 
 Pull requests are welcome! If you have ideas for new features, bug fixes, or improvements (e.g., CSV export, a dark mode theme, new chart types), please feel free to fork this repository and submit a pull request.
 
 ✍️ Author : 
-
 Abdur Rahman - abdurrahmancce
