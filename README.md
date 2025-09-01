@@ -22,6 +22,8 @@ A responsive, user-friendly expense tracking web app that helps you manage your 
 
 * 📱 Responsive Design: The app is optimized to work smoothly on both desktop and mobile devices.
 
+* ☀ Seamless switch between Dark & Day modes.🌙
+
 🖼️ Screenshots :
 
 ![WhatsApp Image 2025-09-01 at 22 15 09_ad2eecd3](https://github.com/user-attachments/assets/cd0ae6ee-3f27-4da3-9901-5f18d7409866)
