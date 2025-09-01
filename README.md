@@ -47,6 +47,14 @@ A responsive, user-friendly expense tracking web app that helps you manage your 
 
  * Works offline only → Data is stored locally, not on the internet
 
+🚀 What’s Next : 
+
+ * Add export options (CSV/PDF)
+
+ * Introduce budget goals and alerts
+
+ * Enhance accessibility and visual clarity
+
 📣 Contributing :
 
 Pull requests are welcome! If you have ideas for new features, bug fixes, or improvements (e.g., CSV export, a dark mode theme, new chart types), please feel free to fork this repository and submit a pull request.
