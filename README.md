@@ -6,7 +6,7 @@ A responsive, user-friendly expense tracking web app that helps you manage your 
 
 🔗 Live Demo : https://abdurrahmancce.github.io/Expense-Tracker/
 
-📌 Features :
+## 📌 Features :
 
  * ✅ Add & View Expenses: Log expenses with a specific category, amount, and date.
 
@@ -24,12 +24,12 @@ A responsive, user-friendly expense tracking web app that helps you manage your 
 
 * ☀ Seamless switch between Dark & Day modes.🌙
 
-🖼️ Screenshots :
+## 🖼️ Screenshots :
 
 ![WhatsApp Image 2025-09-01 at 22 15 09_ad2eecd3](https://github.com/user-attachments/assets/cd0ae6ee-3f27-4da3-9901-5f18d7409866)
 ![WhatsApp Image 2025-09-01 at 22 15 09_fb752afd](https://github.com/user-attachments/assets/ea43a18a-ab72-4b56-a8e6-7d4e0ecb1d72)
 
-🛠️ Technologies Used : 
+## 🛠️ Technologies Used : 
 
  * HTML5 - For the page structure.
 
@@ -39,7 +39,7 @@ A responsive, user-friendly expense tracking web app that helps you manage your 
 
  * Chart.js - For creating the dynamic and interactive charts.
 
-📄 LocalStorage Characteristics :
+## 📄 LocalStorage Characteristics :
 
  * LocalStorage is device-specific → Data saved on mobile will not appear on laptop.
 
@@ -49,7 +49,7 @@ A responsive, user-friendly expense tracking web app that helps you manage your 
 
  * Works offline only → Data is stored locally, not on the internet
 
-🚀 What’s Next : 
+## 🚀 What’s Next : 
 
  * Add export options (CSV/PDF)
 
@@ -57,10 +57,10 @@ A responsive, user-friendly expense tracking web app that helps you manage your 
 
  * Enhance accessibility and visual clarity
 
-📣 Contributing :
+## 📣 Contributing :
 
 Pull requests are welcome! If you have ideas for new features, bug fixes, or improvements (e.g., CSV export, a dark mode theme, new chart types), please feel free to fork this repository and submit a pull request.
 
-✍️ Author : 
+## ✍️ Author : 
 
-Abdur Rahman - abdurrahmancce {https://github.com/abdurrahmancce}
+### Abdur Rahman - abdurrahmancce {https://github.com/abdurrahmancce}
