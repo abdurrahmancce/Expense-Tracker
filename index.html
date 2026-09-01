@@ -6,11 +6,60 @@
   <title>Expense Tracker & Bonus Tracker</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- PDF export -->
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.2/dist/jspdf.plugin.autotable.min.js"></script>
+
+  <!-- Excel export -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+  <!-- Firebase SDKs (compat version - simple global `firebase` object) -->
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+
+<base target="_blank">
 </head>
 <body>
-  <div class="container">
+
+  <!-- 
+       LOGIN / SIGNUP SCREEN
+   -->
+       
+  <div class="container" id="authScreen">
+    <h1>💰 Expense Tracker 💰</h1>
+    <p id="authError" class="auth-error"></p>
+
+    <div class="auth-tabs">
+      <button id="loginTab" class="auth-tab active">Login</button>
+      <button id="signupTab" class="auth-tab">Sign Up</button>
+    </div>
+
+    <div id="loginForm" class="form auth-form">
+      <input type="email" id="loginEmail" placeholder="Email">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <button id="loginBtn">Login</button>
+    </div>
+
+    <div id="signupForm" class="form auth-form hidden">
+      <input type="email" id="signupEmail" placeholder="Email">
+      <input type="password" id="signupPassword" placeholder="Password (min 6 characters)">
+      <button id="signupBtn">Create Account</button>
+    </div>
+  </div>
+
+  <!-- 
+       MAIN APP (hidden until logged in)
+   -->
+
+  <div class="container hidden" id="appScreen">
+    <button id="logoutBtn" class="logout-btn">🚪 Logout</button>
     <button id="toggleDarkMode">🌙 Dark Mode</button>
     <h1>💰 Expense Tracker 💰</h1>
+
+    <!-- Shown only if old browser (localStorage) data is found on this device -->
+    <button id="migrateBtn" class="migrate-btn hidden">⬆️ Import old data saved on this device</button>
 
     <!-- Add Expense Form -->
     <div class="form">
@@ -20,21 +69,35 @@
       <button onclick="addExpense()">Save Expense</button>
     </div>
 
-    <!-- Daily Expenses Table -->
-    <h2>All Expenses</h2>
-    <div class="table-wrapper">
-      <table id="expenseTable">
-        <thead>
-          <tr><th>Item</th><th>Amount</th><th>Date</th><th>Action</th></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+    <!-- All Expenses (Dropdown Menu) -->
+    <div class="dropdown">
+      <button class="dropdown-btn" id="expenseDropdownBtn">All Expenses <span class="caret">▾</span></button>
+      <div class="dropdown-content" id="expenseDropdownContent">
+        <div class="month-nav" id="expenseMonthNav"></div>
+        <div class="expense-total" id="expenseTotal"></div>
+        <div class="table-wrapper">
+          <table id="expenseTable">
+            <thead>
+              <tr><th>Item</th><th>Amount</th><th>Date</th><th>Action</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
-    <!-- Monthly & Yearly Tables -->
-    <h2>Monthly & Yearly Summary</h2>
-    <div id="monthlyTables"></div>
-    <div id="yearlyTables"></div>
+    <!-- Monthly & Yearly Summary (Dropdown Menu) -->
+    <div class="dropdown">
+      <button class="dropdown-btn" id="summaryDropdownBtn">Monthly & Yearly Summary <span class="caret">▾</span></button>
+      <div class="dropdown-content" id="summaryDropdownContent">
+        <div id="monthlyTables"></div>
+        <div id="yearlyTables"></div>
+      </div>
+    </div>
+
+    <!-- Export All Data -->
+    <button id="exportPdfBtn" class="export-btn">📄 Export All Data to PDF</button>
+    <button id="exportExcelBtn" class="export-btn excel-btn">📊 Export All Data to Excel</button>
 
     <!-- Charts -->
     <h2>Expenses Charts</h2>
