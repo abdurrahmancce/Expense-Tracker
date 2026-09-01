@@ -74,6 +74,172 @@ th { background:#007bff; color:white; }
   .chart { max-width:100%; }
 }
 
+/*
+   Dropdown Menu (All Expenses / Monthly & Yearly Summary)
+ */
+.dropdown {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  background: #007bff;
+  color: #fff;
+  padding: 12px 18px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.dropdown-btn:hover { background:#0056b3; }
+
+.dropdown-btn .caret {
+  transition: transform 0.3s ease;
+  font-size: 16px;
+}
+
+.dropdown-btn.active .caret {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #f9f9fb;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 15px;
+}
+
+.dropdown-content.open {
+  /* High enough that 2+ years of data (hundreds of rows) never gets
+     clipped. overflow is hidden only for the closed-state collapse
+     animation; once open there's no real cap on content height. */
+  max-height: 300000px;
+  padding: 15px;
+}
+
+.month-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.month-nav button {
+  background: #e9ecef;
+  color: #333;
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+.month-nav button.active,
+.month-nav button:hover {
+  background: #28a745;
+  color: #fff;
+}
+
+.expense-total {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #e9ecef;
+  border-radius: 5px;
+  color: #007bff;
+}
+
+.export-btn {
+  display: block;
+  width: 100%;
+  background: #6f42c1;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.export-btn:hover { background: #5a32a3; }
+
+.excel-btn {
+  background: #217346;
+}
+.excel-btn:hover { background: #185a37; }
+
+/* 
+   Auth Screen (Login / Signup)
+   */
+.hidden { display: none !important; }
+
+#authScreen {
+  max-width: 420px;
+}
+
+.auth-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.auth-tab {
+  flex: 1;
+  background: #e9ecef;
+  color: #333;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.auth-tab.active {
+  background: #007bff;
+  color: #fff;
+}
+
+.auth-form {
+  flex-direction: column;
+}
+
+.auth-form input, .auth-form button {
+  flex: 1 1 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.auth-error {
+  color: #dc3545;
+  text-align: center;
+  min-height: 20px;
+  font-size: 14px;
+}
+
+.logout-btn {
+  float: left;
+  margin-bottom: 10px;
+  background: #dc3545;
+}
+.logout-btn:hover { background: #b02a37; }
+
+.migrate-btn {
+  display: block;
+  width: 100%;
+  background: #ff9f40;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-weight: bold;
+}
+.migrate-btn:hover { background: #e6892e; }
+
 /* Dark mode */
 .dark-mode {
   background: #121212;
@@ -94,4 +260,33 @@ th { background:#007bff; color:white; }
 }
 .dark-mode td, .dark-mode th {
   color: #f1f1f1;
+}
+
+.dark-mode .dropdown-content {
+  background: #181818;
+  border-color: #444;
+}
+
+.dark-mode .month-nav button {
+  background: #333;
+  color: #f1f1f1;
+}
+
+.dark-mode .month-nav button.active,
+.dark-mode .month-nav button:hover {
+  background: #28a745;
+  color: #fff;
+}
+
+.dark-mode .expense-total {
+  background: #333;
+  color: #4da3ff;
+}
+
+.dark-mode .auth-tab {
+  background: #333;
+  color: #f1f1f1;
+}
+.dark-mode .auth-tab.active {
+  background: #007bff;
 }
