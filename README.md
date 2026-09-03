@@ -439,37 +439,19 @@ Feel free to open an **Issue** and provide:
 
 ## 📜 License
 
-### 🔒 Permission Required License
+🔒 **Permission Required — All Rights Reserved**
 
 Copyright © 2026 **Abdur Rahman Akash**
 
-This project and its source code are **not licensed for free reuse, redistribution, modification, or commercial use**.
+This project is **not open source** and may not be copied, modified, redistributed, deployed, or used commercially without prior written permission from the author.
 
-Anyone wishing to:
+You may view and study the source code for educational purposes. Any other use requires explicit permission.
 
-* 📥 Use this application or its source code
-* 🔄 Copy, modify, or create derivative works
-* 🚀 Deploy or host the application publicly
-* 💼 Use the application for commercial purposes
-* 📤 Redistribute or publish the source code
-* 🏢 Use this project as part of another project or organization
+📩 **Permission Requests:**
 
-**must obtain explicit written permission from the author before doing so.**
+Please contact **Abdur Rahman Akash** through [Email](mailto:akash.abdur.2002@gmail.com).
 
-```Viewing, studying, and learning from the publicly available source code is permitted, but **using, copying, modifying, distributing, or deploying the application requires prior permission**.```
-
-For permission or licensing inquiries, please contact:
-
-📧 **Abdur Rahman Akash**
-
-📧 Email: akash.abdur.2002@gmail.com
-
-🔗 [GitHub](https://github.com/abdurrahmancce)
-
-🔗 [LinkedIn](https://www.linkedin.com/in/abdur-rahman-akash26/)
-
-> ⚠️ **No permission is granted by default.** Unauthorized use, reproduction, modification, distribution, or deployment of this project is not permitted.
-
+See the [`LICENSE`](LICENSE) file for the complete terms and conditions.
 
 ---
 
