@@ -449,7 +449,7 @@ You may view and study the source code for educational purposes. Any other use r
 
 📩 **Permission Requests:**
 
-Please contact **Abdur Rahman Akash** through [Email](mailto:akash.abdur.2002@gmail.com).
+Please contact **Abdur Rahman Akash** through ```akash.abdur.2002@gmail.com```
 
 See the [`LICENSE`](LICENSE) file for the complete terms and conditions.
 
