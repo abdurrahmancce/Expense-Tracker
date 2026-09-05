@@ -23,7 +23,7 @@ User data is stored in **Firebase Firestore**, while authentication is handled t
 ## 🔗 Project Links
 
 * 📂 **GitHub Repository:** [Expense Tracker](https://github.com/abdurrahmancce/Expense-Tracker)
-* 🌐 **Live Preview:** [View Live Demo](https://abdurrahmancce.github.io/Expense-Tracker/)
+* 🌐 **Live Preview:** [View Live Demo](abdurrahmancce.github.io/expense-tracker/)
 
 ---
 
